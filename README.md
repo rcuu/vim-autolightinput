@@ -6,7 +6,7 @@ A plugin for acmer.
 #### 安装：
 
 ```groovy
-Plug 'kindred/autolightinput.vim'
+Plug 'cyanvars/vim-autolightinput'
 ```
 
 #### 说明：
