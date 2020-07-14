@@ -15,7 +15,7 @@ Plug 'cyanvars/vim-autolightinput'
 
 + 多道题目的时候 `data.in` 会被覆盖，以后重新做一道题的时候又需要重新写 `data.in`
 
-这个插件旨在，自动地在指定目录下，默认为 `/tmp/autolightinputdata/`下新建对应的输入文件，比如："1000_poj.cpp"，则会对应生成 /tmp/inputdata/1000_poj_data.in。这样在自己的目录下就会很干净，而且能将输入文件进行保留。
+这个插件旨在，自动地在指定目录下，默认为 `/tmp/autolightinputdata/`下新建对应的输入文件，比如："1000_poj.cpp"，则会对应生成 /tmp/autolightinputdata/1000_poj_data.in。这样在自己的目录下就会很干净，而且能将输入文件进行保留。
 
 当需要编辑输入文件时，运行 `:AutoLightInputEdit` 即可进入输入文件的buffer。
 
