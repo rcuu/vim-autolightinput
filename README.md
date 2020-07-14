@@ -25,7 +25,7 @@ Plug 'cyanvars/vim-autolightinput'
 
 #### 用法总结：
 
-+ 在任意位置打开一份代码程序，运行 `:AutoLightInputEdit`，进行输入文件的编写，编写完运行 `:bd`关闭当前buffer。
++ 在任意位置打开一份代码程序，运行 `:AutoLightInputEdit`，进行输入文件的编写，编写保存完，运行 `:bd`关闭当前buffer。
 + 运行`AutoLightInputRun` 查看运行情况。
 
 
