@@ -1,6 +1,6 @@
 let g:auto_light_input_data_dir="/tmp/autolightinputdata/"
 
-fu! InputEdit()
+fu! AutoLightInputEdit()
   if !isdirectory(g:auto_light_input_data_dir)
     call mkdir(g:auto_light_input_data_dir, 'p')
   endif
@@ -8,7 +8,7 @@ fu! InputEdit()
   execute 'edit ' . l:data_fname
 endfu
 
-fu! ProgramRun()
+fu! AutoLightInputRun()
   let l:data_fname=g:auto_light_input_data_dir . expand('%:r') . "_data.in"
   exe "silent w"
   if &filetype == 'python'
@@ -29,5 +29,5 @@ fu! ProgramRun()
   endif
 endfu
 
-command! -nargs=0 AutoLightInputEdit call InputEdit()
-command! -nargs=0 AutoLightInputRun  call ProgramRun()
+command! -nargs=0 AutoLightInputEdit call AutoLightInputEdit()
+command! -nargs=0 AutoLightInputRun  call AutoLightInputRun()
