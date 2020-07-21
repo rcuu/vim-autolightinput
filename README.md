@@ -33,6 +33,16 @@ Plug 'cyanvars/vim-autolightinput'
 
 插件会默认把输入文件存储在 `/tmp/autolightinputdata/`下，可以通过设置以下变量进行修改：
 
+可以设置个映射方便调用：
+
+```
+let mapleader = ";"
+nmap <Leader>1 :AutoLightInputRun<CR>
+nmap <Leader>2 :AutoLightInputEdit<CR>
+```
+
+这样以后在 `Normal` 模式下即可 ;1 和;2 分别运行和编辑输入文件
+
 ```shell
 let g:auto_light_input_data_dir="/dir_where_you_like/"
 ```
