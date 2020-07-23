@@ -1,7 +1,7 @@
 # AutoLightInput
 一个简易的自动处理输入输出的插件。
 
-acm plug / a plugin for acmer.
+acm plugin / acm vim plugin / a plugin for acmer.
 
 #### 安装：
 
