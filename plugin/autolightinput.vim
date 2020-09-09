@@ -29,5 +29,5 @@ fu! AutoLightInputRun()
   endif
 endfu
 
-command! -nargs=0 AutoLightInputEdit call AutoLightInputEdit()
-command! -nargs=0 AutoLightInputRun  call AutoLightInputRun()
+command! -nargs=0 KDEditInput call AutoLightInputEdit()
+command! -nargs=0 KDRunInput  call AutoLightInputRun()
