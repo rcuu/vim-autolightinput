@@ -37,8 +37,8 @@ Plug 'cyanvars/vim-autolightinput'
 
 ```
 let mapleader = ";"
-nmap <Leader>1 :AutoLightInputRun<CR>
-nmap <Leader>2 :AutoLightInputEdit<CR>
+nmap <Leader>1 :AutoRunInput<CR>
+nmap <Leader>2 :AutoEditInput<CR>
 ```
 
 这样以后在 `Normal` 模式下即可 ;1 和;2 分别运行和编辑输入文件
