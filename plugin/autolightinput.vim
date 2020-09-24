@@ -12,7 +12,7 @@ fu! AutoLightInputRun()
   let l:data_fname=g:auto_light_input_data_dir . expand('%:r') . "_data.in"
   exe "silent w"
   if &filetype == 'python'
-    exe "!python % < " . l:data_fname  
+    exe "!clear & python % < " . l:data_fname  
   elseif &filetype == 'c' || &filetype == 'cpp'
     let l:bin_file = g:auto_light_input_data_dir  .expand('%:r')
     exe "silent !rm -rf " . l:bin_file
