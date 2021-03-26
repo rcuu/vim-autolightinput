@@ -6,7 +6,7 @@ acm plugin / acm vim plugin / a plugin for acmer.
 #### 安装：
 
 ```groovy
-Plug 'cyanvars/vim-autolightinput'
+Plug 'chiiyuu/vim-autolightinput'
 ```
 
 #### 说明：
