@@ -29,5 +29,26 @@ fu! AutoLightInputRun()
   endif
 endfu
 
+fu! AutoLightRun()
+  exe "silent w"
+  if &filetype == 'python'
+    exe "!clear & python %"  
+  elseif &filetype == 'c' || &filetype == 'cpp'
+    let l:bin_file = g:auto_light_input_data_dir  .expand('%:r')
+    exe "silent !rm -rf " . l:bin_file
+    exe "silent !g++ -std=c++14 % -o " . l:bin_file
+    exe "!" . l:bin_file 
+    exe "silent !rm -rf " . l:bin_file
+  elseif &filetype == 'java'
+    let l:bin_file = g:auto_light_input_data_dir  .expand('%:r')
+    exe "silent !javac % -d " . g:auto_light_input_data_dir
+    exe "!java -classpath " . g:auto_light_input_data_dir . ' ' . expand('%:r')
+    exe "silent !rm -rf " . l:bin_file . ".class"
+  else
+    echo "The filetype is not currently supported, but only c:cpp:python:java."
+  endif
+endfu
+
 command! -nargs=0 KDEditInput call AutoLightInputEdit()
 command! -nargs=0 KDRunInput  call AutoLightInputRun()
+command! -nargs=0 KDRun call AutoLightRun()
