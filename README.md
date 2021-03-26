@@ -38,10 +38,11 @@ Plug 'chiiyuu/vim-autolightinput'
 ```
 let mapleader = ";"
 nmap <Leader>1 :KDRunInput<CR>
-nmap <Leader>2 :KDEditInput<CR>
+nmap <Leader>2 :KDRun<CR>
+nmap <Leader>3 :KDEditInput<CR>
 ```
 
-这样以后在 `Normal` 模式下即可 ;1 和;2 分别运行和编辑输入文件
+这样以后在 `Normal` 模式下即可 ;1 和;3 分别运行和编辑输入文件, ;2则是无输入直接运行本文件
 
 ```shell
 let g:auto_light_input_data_dir="/dir_where_you_like/"
